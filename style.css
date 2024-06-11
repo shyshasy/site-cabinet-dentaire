@@ -14,32 +14,34 @@ body {
     padding: 0;
     background-color: var(--white);
     
-    line-height: 1.6; 
+    line-height: 1.6;  
  }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
+    /* min-height: 8vh; */
     background-color: #fff;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    
 
 
 }
 header{
-   padding: 10px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 2px var(--silver) solid;
 
 }
 #logo{
-    width: 50%;
+    width: 60%;
 }
 .nav-links{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
 
 }
 .nav-links a{
@@ -48,18 +50,21 @@ header{
 
 
 }
-
+hr{
+    color: var(--silver);
+}
 
 .nav-links li{
     list-style: none;
 }
 .nav-links .hom{
     color:#007bff;
+    
 }
 .nav-links .log{
     background-color:#007bff;;
     color: #F8FAFC;
-    padding: 12px  35px  12px  35px;
+     padding: 12px  35px  12px  35px; 
     text-align: center;
     border-radius: 8px;
 }
@@ -105,9 +110,10 @@ header{
 }
 
 .cta-buttons .primary {
-    background-color: #516EFF;
+
+    background-color: #007bff;
     color: white;
-    /* margin-left: 40px; */
+
     margin-right: 160px;
     padding: 14px;
     font-size: 10px;
@@ -397,6 +403,7 @@ header{
     display: flex;
     position: relative;
     justify-content: center;
+    width: 80%;
 }
 
 .header img {
@@ -432,9 +439,10 @@ flex-direction: column;
     align-items: center;
      position: relative; 
     justify-content: center;
-    border: 1px solid #52525B;
+    border: 1px solid var(--silver);
     border-radius: 10px;
     height: 100%;
+    width: 20%;
 }
 
 .doctor img {
@@ -725,7 +733,7 @@ button:hover {
 }
 
 .histors{
-    width: 80%;
+    width: 100%;
 }
 .histors p{
     display: flex;
@@ -1170,8 +1178,8 @@ button:hover {
     padding: 50px 0;
     display: flex;
     justify-content: center;
-    flex-direction: column; /* S'assurer que le contenu est centré verticalement sur les petits écrans */
-    align-items: center; /* Centrer le contenu horizontalement sur les petits écrans */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .how-to-get-service h2 {
@@ -1180,13 +1188,13 @@ button:hover {
 
 .how-to-get-service p {
     font-size: 1em;
-    margin: 0 10px; /* Ajouter une marge pour éviter que le texte touche les bords de l'écran */
+    margin: 0 10px; 
 }
 
 .steps {
     display: flex;
-    flex-direction: column; /* Empiler les éléments verticalement */
-    align-items: center; /* Centrer les éléments */
+    flex-direction: column; 
+    align-items: center; 
     gap: 20px;
     margin: 10px;
 }
@@ -1195,14 +1203,14 @@ button:hover {
     text-align: center;
     background-color: var(--white);
     color: var(--defaultLinkColor);
-    width: 100px; /* Définir une largeur fixe pour les carrés */
-    height: 100px; /* Définir une hauteur fixe pour les carrés */
+    width: 100px; 
+    height: 100px; 
     padding: 15px;
     border-radius: 15px;
     display: flex;
-    flex-direction: column; /* Garder le contenu en colonne à l'intérieur du carré */
-    justify-content: center; /* Centrer verticalement le contenu */
-    align-items: center; /* Centrer horizontalement le contenu */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .step img {
@@ -1246,7 +1254,274 @@ button:hover {
     .step p {
         font-size: 0.7em; 
     }
+    /* Global box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Styles de base */
+.how-to-get-service {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.how-to-get-service h2 {
+    font-size: 2em;
+}
+
+.how-to-get-service p {
+    font-size: 1em;
+    margin: 0 10px; 
+}
+
+.steps {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px;
+    margin: 10px;
+}
+
+.step {
+    text-align: center;
+    background-color: var(--white);
+    color: var(--defaultLinkColor);
+    width: 100px; 
+    height: 100px; 
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.step img {
+    width: 30px; 
+    height: 30px; 
+}
+
+.step img:hover {
+    background-color: #ffffff; 
+}
+
+.step p {
+    margin-top: 10px;
+    font-size: 0.8em; 
+}
+
+.Subscrib {
+    display: flex;
+    flex-direction: column;
+    background-color: #216583;
+    padding: 50px 0;
+    width: 82%;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 auto; 
+    text-align: center;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.Subscrib h1 {
+    color: var(--white);
+}
+
+.subit {
+    text-align: center;
+    align-content: center;
+}
+
+.Subscrib input {
+    width: 100%; 
+    max-width: 300px;
+    margin: 10px auto; 
+    display: block; 
+    background-color: var(--silver);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.Subscrib input::placeholder {
+    color: white;
+}
+
+/* Responsive Styles */
+
+
+@media only screen and (max-width: 1200px) {
+    .services, .content, .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service, .doctor {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .appointment, .final {
+        padding: 20px;
+    }
+}
+
+/* Tablet view */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .left-section img, .finalite img {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-ctc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-l {
+        width: 100%;
+    }
+
+    .med {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .secondary textarea {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile view */
+@media only screen and (max-width: 480px) {
+    .servicess {
+        flex-direction: column;
+    }
+
+    .serv {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .header img, .finalite img {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-l, .secondary {
+        width: 100%;
+    }
+
+    .form-ctc {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .med input, .med select, .secondary textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-top .child {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small screen adjustments */
+@media (max-width: 430px) {
+    .how-to-get-service {
+        padding: 20px 0;
+    }
+
+    .how-to-get-service h2 {
+        font-size: 1.5em; 
+    }
+
+    .how-to-get-service p {
+        font-size: 0.9em; 
+    }
+
+    .step {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .step img {
+        width: 25px; 
+        height: 25px;
+    }
+
+    .step p {
+        font-size: 0.7em; 
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .contener-img {
+        display: flex;
+        flex-direction: column;
+    } 
+    
+    .servicess {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Subscrib {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 10px;
+    }
+
+    .Subscrib input {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+   
+}
+
+
 
 
 }
