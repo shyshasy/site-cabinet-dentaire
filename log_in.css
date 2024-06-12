@@ -101,6 +101,15 @@ p{
     text-align: center;
     margin-left: 100px;
 }
+.back {
+
+    color: black;
+}
+.form-container .back a {
+    text-decoration: underline;
+    color: black;
+}
+
 
 @media screen {
     body {

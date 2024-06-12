@@ -1010,12 +1010,21 @@ button:hover {
 }
 .left-section img {
     width: 80%;
+    
+    
+}
+
+.servicess .Cosmetic {
+    display: flex;
+     flex-direction: column; 
+
 }
 .contener-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 }
 .steps{
     display: flex;
@@ -1023,7 +1032,10 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
-
+.servicess{
+    display: flex;
+    flex-direction: column;
+}
 .services{
     display: flex;
     flex-direction: column;
@@ -1045,6 +1057,7 @@ button:hover {
     justify-content: center;
     display: flex;
     margin-left: 30%;
+
   }
   
    #our{
@@ -1068,6 +1081,12 @@ button:hover {
     align-items: center;
     
    }
+   .finalite{
+    width: 90%;
+     margin-left: 30%;
+    
+
+   }
    .Subscrib{
     display: flex;
     flex-direction: column;
@@ -1085,13 +1104,22 @@ button:hover {
    .subit{
     display: flex;
     flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
    }
    
-   .Subscrib input{
+   .Subscrib input {
+    padding: 15px 40px;
     margin-top: 20px;
+     width: 100%; 
+     
+
    }
    .Subscrib button{
+    padding: 15px 40px;
     margin-top: 20px;
+    width: 100%;
    }
    
    .footer-top{
